@@ -177,3 +177,152 @@ section {
     letter-spacing: 4px;
     text-transform: uppercase;
 }
+
+/* Technologies */
+
+.logos {    
+    height: 300px;
+    width: 100%;
+    display: flex;
+    margin: 30px -15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logos img {
+    border-radius: 35%;
+    width: 120px;
+    height: 120px;
+    
+}
+
+.logos_item {
+    padding: 20px 50px
+    
+}
+
+.logos_img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Projects */
+
+.projects {
+    margin: 0 auto;
+    padding: 30px 60px;
+    width: 55em;
+    color: #fff;
+    background-color: rgba(46, 49, 65, 1);
+}
+
+.projects-text h2 {
+    padding-bottom: 1em;
+    border-bottom: solid 2px rgba(255, 255, 255, 0.125);    
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin: 0 0 1em 0;
+    text-transform: uppercase;
+}
+
+.projects-text p {
+    margin: 0 0 2em 0;
+    font-size: 20px;
+    font-weight: 400;    
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 2em 0;
+}
+
+.card {
+    padding: 0;
+    background-color: #353849;
+    border-radius: 5px;
+    margin: 10px 30px 10px 10px;
+    width: 45%;
+    
+}
+
+.card img{
+    width: 100%;
+    margin: 0;
+}
+
+.card-text {
+    margin: 20px 30px
+}
+
+.card-text h3 {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+}
+
+.card-text p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.card-text button {
+    width: 130px;
+    height: 30px;
+    background-color: #353849;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.fa-circle-arrow-right {
+    font-size: 20px;
+    transition: transform 0.2s ease-in-out;
+    color: #fff;
+}
+
+.fa-circle-arrow-right:hover {
+    transform: rotate(90deg) scale(1.2);
+}
+
+/* .btn .browse {
+    border: 2px solid #fff;
+    height: 30px;    
+    padding: 0 10px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 5px;
+} */
+
+.cards .browse {
+    background-color: #353849;
+    border: 1px solid rgb(121, 121, 121);
+    border-radius: 5px;
+    height: 40px;
+    padding: 0 10px;
+    margin: 30px 10px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #fff;
+}
+
+.cards .browse:hover {
+    background-color: #4e536b;
+    transition: all .3s ease-out;
+}
