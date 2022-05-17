@@ -18,12 +18,24 @@
     <header id="header" class="alt">
         <h1><a href="index.html">Dim Derkach</a></h1>
         <nav>
-            <a href="#menu">Menu</a>
+            <a href="#menu" onclick="toggle()" id="toggle-menu">Menu</a>
         </nav>
     </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <div class="inner">
+                <h2>MENU</h2>
+                <a href="#header">HOME</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#contact">CONTACT</a>
+                <a href="#" id="close" onclick="toggle()">Close</a>
+            </div>
+        </nav>
+
     <section>
         <!-- Social -->
-        <div class="social">
+        <div class="social" id="social">
             <div class="button-social">
                 <div class="icon">
                     <i class="fa-brands fa-github-square"></i>
@@ -52,7 +64,7 @@
 
         <!-- Intro -->
 
-        <div class="intro">
+        <div class="intro" id="intro">
             <h1>DIM DERKACH</h1>
             <hr>
             <p>SOFTWARE DEVELOPER</p>
@@ -61,7 +73,7 @@
     </section>
 
     <!-- Technologies -->
-    <div class="logos">
+    <div class="logos" id="logos">
         <div class="logos_item">
             <img class="logos_img" src="images/spec/html.png" alt="">
         </div>
@@ -84,7 +96,7 @@
     </div>
     
     <!-- Projects -->
-    <div class="projects">
+    <div class="projects" id="projects">
         <div class="projects-text">
             <h2>Hi, it's Dim!</h2>
             <p>I am a web developer currently based in China. Hit me up and let's create something special.</p>
@@ -137,7 +149,7 @@
 
     <!-- Get in touch -->
 
-    <div class="get-in-touch">
+    <div class="get-in-touch" id="contact">
         <h2>GET IN TOUCH</h2>
         <p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
         <form action="#" method="post">
@@ -163,10 +175,12 @@
     <footer>
         <p>
             Created by stay0nly 
-            <a href="https://github.com/stay0nly/aSketch" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://github.com/stay0nly/Portfolio" target="_blank"><i class="fa-brands fa-github"></i></a>
         </p>
 
     </footer>
+
+
 
     <script src="app.js"></script>
 </body>
