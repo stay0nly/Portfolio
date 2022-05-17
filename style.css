@@ -16,7 +16,9 @@ body {
 	font-weight: 300;
 }
 
-
+#body.active {
+    filter: blur(5px)
+}
 
 a {
     text-decoration: none;
