@@ -3,10 +3,14 @@ const intro = document.getElementById('intro');
 const logos = document.getElementById('logos');
 const menu = document.getElementById('menu');
 const closed = document.getElementById('close');
-const toggleMenu = document.getElementById('toggle-menu');
+const preview1 = document.getElementById('preview1');
+const preview2 = document.getElementById('preview2');
+const preview3 = document.getElementById('preview3');
+const preview4 = document.getElementById('preview4');
 
 
 let toggleNavStatus = false;
+let previewOpenStatus = false;
 
 function toggleNav() {
     
@@ -27,5 +31,39 @@ function toggleNav() {
         menu.classList.remove('active');
         
         toggleNavStatus = false;
+    }
+}
+
+function closeMenu(event) {
+    if (toggleNavStatus === true) {
+        social.classList.remove('active');
+        intro.classList.remove('active');
+        logos.classList.remove('active');
+        toggleMenu.classList.remove('active');
+        menu.classList.remove('active');
+        
+        const smoothLinks = document.querySelectorAll('a[href^="#"]');
+        for (let smoothLink of smoothLinks) {
+            smoothLink.addEventListener('click', function (e){
+                e.preventDefault();
+                const id = smoothLink.getAttribute('href');
+
+                document.querySelector(id).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        };
+    
+        toggleNavStatus = false;
+    } else {
+        console.log("False");
+    }
+}
+
+function openPreview1() {
+    if (previewOpenStatus === false) {
+        preview1.classList.toggle('active');
+        toggleNavStatus = true;
     }
 }

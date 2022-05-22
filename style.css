@@ -217,19 +217,19 @@ section {
     transition: all .3s ease-out; 
 }
 
-.social .button-social:nth-child(1) span {
+.social .button-social:nth-child(1) a {
     color: #333;
 }
 
-.social .button-social:nth-child(2) span {
+.social .button-social:nth-child(2) a {
     color: #0e76a8;
 }
 
-.social .button-social:nth-child(3) span {
+.social .button-social:nth-child(3) a {
     color: #6cc644;
 }
 
-.social .button-social:nth-child(4) span {
+.social .button-social:nth-child(4) a {
     color: #6e5494;
 }
 
@@ -330,7 +330,12 @@ section {
     margin: 0 0 2em 0;
 }
 
+.cards.active {
+    filter: blur(5px);
+}
+
 .card {
+    position: relative;
     padding: 0;
     background-color: #353849;
     border-radius: 5px;
@@ -402,6 +407,69 @@ section {
 }
 
 .cards .browse:hover {
+    background-color: #4e536b;
+    transition: all .3s ease-out;
+}
+
+.card-preview {
+    display: flexbox;
+    justify-content: space-evenly;
+    position: fixed;
+    pointer-events: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    padding: 20px;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    border-radius: 5px;
+    background: rgb(76, 80, 102);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    text-align: center;
+    letter-spacing: 1px;
+    z-index: 0;
+}
+
+.card-preview .active {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+.card-preview-img img {
+    height: 15em;
+}
+
+.card-preview-description {
+    padding-top: 20px;
+}
+
+.card-preview p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: solid 2px rgba(255, 255, 255, 0.125);
+    font-size: 16px;
+    text-align: left;
+}
+
+.card-preview a {
+    background-color: #353849;
+    border: solid 2px rgba(255, 255, 255, 0.125);
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin: 30px 10px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: 300;
+    cursor: pointer;
+    color: #fff;
+}
+
+.card-preview a:hover {
     background-color: #4e536b;
     transition: all .3s ease-out;
 }
