@@ -3,10 +3,14 @@ const intro = document.getElementById('intro');
 const logos = document.getElementById('logos');
 const menu = document.getElementById('menu');
 const closed = document.getElementById('close');
-const toggleMenu = document.getElementById('toggle-menu');
+const preview1 = document.getElementById('preview1');
+const preview2 = document.getElementById('preview2');
+const preview3 = document.getElementById('preview3');
+const preview4 = document.getElementById('preview4');
 
 
 let toggleNavStatus = false;
+let previewOpenStatus = false;
 
 function toggleNav() {
     
@@ -37,7 +41,11 @@ function closeMenu(event) {
         logos.classList.remove('active');
         toggleMenu.classList.remove('active');
         menu.classList.remove('active');
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 191b67080d086124c57f9678d9ddd9e5afcb0c76
         const smoothLinks = document.querySelectorAll('a[href^="#"]');
         for (let smoothLink of smoothLinks) {
             smoothLink.addEventListener('click', function (e){
@@ -50,9 +58,23 @@ function closeMenu(event) {
                 });
             });
         };
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 191b67080d086124c57f9678d9ddd9e5afcb0c76
         toggleNavStatus = false;
     } else {
         console.log("False");
     }
 }
+<<<<<<< HEAD
+=======
+
+function openPreview1() {
+    if (previewOpenStatus === false) {
+        preview1.classList.toggle('active');
+        toggleNavStatus = true;
+    }
+}
+>>>>>>> 191b67080d086124c57f9678d9ddd9e5afcb0c76
