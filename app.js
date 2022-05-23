@@ -3,14 +3,49 @@ const intro = document.getElementById('intro');
 const logos = document.getElementById('logos');
 const menu = document.getElementById('menu');
 const closed = document.getElementById('close');
-const preview1 = document.getElementById('preview1');
-const preview2 = document.getElementById('preview2');
-const preview3 = document.getElementById('preview3');
-const preview4 = document.getElementById('preview4');
+const toggleMenu = document.getElementById('toggle-menu');
 
+const openPopupButtons = document.querySelectorAll('[data-modal-target]');
+const closePopupButtons = document.querySelectorAll('[data-close-button]');
+const overlay = document.getElementById('overlay');
+
+openPopupButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const modal = document.querySelector(button.dataset.modalTarget);
+        console.log("clicked");
+        openModal(modal);
+    });
+});
+
+overlay.addEventListener('click', () => {
+    const modals = document.querySelectorAll('.modal.active');
+    modals.forEach(modal => {
+        closeModal(modal);
+    });
+});
+
+closePopupButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const modal = button.closest('.modal');
+        closeModal(modal);
+    });
+});
+
+function openModal(modal) {
+    if (modal == null) return;
+    modal.classList.add('active');
+    overlay.classList.add('active');
+
+};
+
+function closeModal(modal) {
+    if (modal == null) return;
+    modal.classList.remove('active');
+    overlay.classList.remove('active');
+
+};
 
 let toggleNavStatus = false;
-let previewOpenStatus = false;
 
 function toggleNav() {
     
@@ -41,11 +76,7 @@ function closeMenu(event) {
         logos.classList.remove('active');
         toggleMenu.classList.remove('active');
         menu.classList.remove('active');
-<<<<<<< HEAD
-
-=======
         
->>>>>>> 191b67080d086124c57f9678d9ddd9e5afcb0c76
         const smoothLinks = document.querySelectorAll('a[href^="#"]');
         for (let smoothLink of smoothLinks) {
             smoothLink.addEventListener('click', function (e){
@@ -58,23 +89,10 @@ function closeMenu(event) {
                 });
             });
         };
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> 191b67080d086124c57f9678d9ddd9e5afcb0c76
+        
         toggleNavStatus = false;
     } else {
         console.log("False");
     }
 }
-<<<<<<< HEAD
-=======
 
-function openPreview1() {
-    if (previewOpenStatus === false) {
-        preview1.classList.toggle('active');
-        toggleNavStatus = true;
-    }
-}
->>>>>>> 191b67080d086124c57f9678d9ddd9e5afcb0c76

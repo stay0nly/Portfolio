@@ -110,18 +110,7 @@
                 <div class="card-text">
                     <h3>ANTE FERMENTUM</h3>                    
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-                    <button onclick="openPreview1()"><i class="fa-solid fa-circle-arrow-right"></i> Learn more</button>
-                </div>
-                <div class="card-preview" id="preview1">
-                    <div class="card-preview-img">
-                        <img src="images/projects/1.jpg" alt="">
-                    </div>
-                    <div class="card-preview-description">
-                        <h3>Project name</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla. Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla.</p>
-                        <a href="http://" target="_blank">WWW</a>
-                        <a href="http://" target="_blank">GitHub</a>
-                    </div>
+                    <button data-modal-target="#modal1"><i class="fa-solid fa-circle-arrow-right"></i> Learn more</button>
                 </div>
             </div>
             <div class="card">
@@ -131,18 +120,7 @@
                 <div class="card-text">
                     <h3>ANTE FERMENTUM</h3>                    
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-                    <button><i class="fa-solid fa-circle-arrow-right"></i> Learn more</button>
-                </div>
-                <div class="card-preview" id="preview2">
-                    <div class="card-preview-img">
-                        <img src="images/projects/1.jpg" alt="">
-                    </div>
-                    <div class="card-preview-description">
-                        <h3>Project name</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla. Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla.</p>
-                        <a href="http://" target="_blank">WWW</a>
-                        <a href="http://" target="_blank">GitHub</a>
-                    </div>
+                    <button data-modal-target="#modal2"><i class="fa-solid fa-circle-arrow-right"></i> Learn more</button>
                 </div>
             </div>
             <div class="card">
@@ -152,18 +130,7 @@
                 <div class="card-text">
                     <h3>ANTE FERMENTUM</h3>                    
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-                    <button><i class="fa-solid fa-circle-arrow-right"></i> Learn more</button>
-                </div>
-                <div class="card-preview" id="preview3">
-                    <div class="card-preview-img">
-                        <img src="images/projects/1.jpg" alt="">
-                    </div>
-                    <div class="card-preview-description">
-                        <h3>Project name</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla. Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla.</p>
-                        <a href="http://" target="_blank">WWW</a>
-                        <a href="http://" target="_blank">GitHub</a>
-                    </div>
+                    <button data-modal-target="#modal3"><i class="fa-solid fa-circle-arrow-right"></i> Learn more</button>
                 </div>
             </div>
             <div class="card">
@@ -173,22 +140,71 @@
                 <div class="card-text">
                     <h3>ANTE FERMENTUM</h3>                    
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-                    <button><i class="fa-solid fa-circle-arrow-right"></i> Learn more</button>
-                </div>
-                <div class="card-preview" id="preview4">
-                    <div class="card-preview-img">
-                        <img src="images/projects/1.jpg" alt="">
-                    </div>
-                    <div class="card-preview-description">
-                        <h3>Project name</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla. Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla.</p>
-                        <a href="http://" target="_blank">WWW</a>
-                        <a href="http://" target="_blank">GitHub</a>
-                    </div>
+                    <button data-modal-target="#modal4"><i class="fa-solid fa-circle-arrow-right"></i> Learn more</button>
                 </div>
             </div>
            <button class="browse">Browse more</button>           
         </div>
+    </div>
+    <div id="overlay"></div>
+
+    <!-- Project Preview Modal -->
+
+    <div class="modal" id="modal1">
+        <img src="images/projects/1.jpg" alt="">
+        <div class="modal-description">
+            <div class="modal-header">
+                <div class="title">Project 1</div>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla. Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla.</p>
+                <a href="http://" target="_blank">WWW</a>
+                <a href="http://" target="_blank">GitHub</a>
+            </div>
+        </div>        
+    </div>
+    <div class="modal" id="modal2">
+        <img src="images/projects/1.jpg" alt="">
+        <div class="modal-description">
+            <div class="modal-header">
+                <div class="title">Project 2</div>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla. Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla.</p>
+                <a href="http://" target="_blank">WWW</a>
+                <a href="http://" target="_blank">GitHub</a>
+            </div>
+        </div>        
+    </div>
+    <div class="modal" id="modal3">
+        <img src="images/projects/1.jpg" alt="">
+        <div class="modal-description">
+            <div class="modal-header">
+                <div class="title">Project 3</div>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla. Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla.</p>
+                <a href="http://" target="_blank">WWW</a>
+                <a href="http://" target="_blank">GitHub</a>
+            </div>
+        </div>        
+    </div>
+    <div class="modal" id="modal4">
+        <img src="images/projects/1.jpg" alt="">
+        <div class="modal-description">
+            <div class="modal-header">
+                <div class="title">Project 4</div>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla. Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla.</p>
+                <a href="http://" target="_blank">WWW</a>
+                <a href="http://" target="_blank">GitHub</a>
+            </div>
+        </div>        
     </div>
 
     <!-- Get in touch -->
@@ -214,6 +230,8 @@
             <button type="submit" class="send">Send Message</button> 
         </form>
     </div>
+
+    
     
     <!-- Footer -->
     <footer>
