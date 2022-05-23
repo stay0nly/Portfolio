@@ -29,3 +29,30 @@ function toggleNav() {
         toggleNavStatus = false;
     }
 }
+
+function closeMenu(event) {
+    if (toggleNavStatus === true) {
+        social.classList.remove('active');
+        intro.classList.remove('active');
+        logos.classList.remove('active');
+        toggleMenu.classList.remove('active');
+        menu.classList.remove('active');
+
+        const smoothLinks = document.querySelectorAll('a[href^="#"]');
+        for (let smoothLink of smoothLinks) {
+            smoothLink.addEventListener('click', function (e){
+                e.preventDefault();
+                const id = smoothLink.getAttribute('href');
+
+                document.querySelector(id).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        };
+
+        toggleNavStatus = false;
+    } else {
+        console.log("False");
+    }
+}
