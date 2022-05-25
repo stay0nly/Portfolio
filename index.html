@@ -18,18 +18,18 @@
     <header id="header" class="alt">
         <h1><a href="index.html">Dim Derkach</a></h1>
         <nav>
-            <a href="#menu" onclick="toggleNav()" id="toggle-menu">Menu</a>
+            <a href="#menu" onclick="openMenu()" id="toggle-menu">Menu</a>
         </nav>
     </header>
 
         <!-- Menu -->
-        <nav id="menu">
+        <nav id="menu" class="menu">
             <div class="inner">
                 <h2>MENU</h2>
                 <a href="#header" onclick="closeMenu()">HOME</a>
                 <a href="#projects" onclick="closeMenu()">PROJECTS</a>
                 <a href="#contact" onclick="closeMenu()">CONTACT</a>
-                <a href="#" id="close" onclick="closeMenu()">Close</a>
+                <a id="close" onclick="closeMenu()">Close</a>
             </div>
         </nav>
 
@@ -212,25 +212,33 @@
     <div class="get-in-touch" id="contact">
         <h2>GET IN TOUCH</h2>
         <p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-        <form action="#" method="post">
+        <form action="sendmail.php" method="POST" class="form_body" id="form">
             <div class="fields">
                 <div class="field">
                     <label for="name">Name</label>
-                    <input type="text" name="name">
+                    <input type="text" name="name" class="form_input _req" required>
                 </div>
                 <div class="field">
                     <label for="E-Mail">E-Mail</label>
-                    <input type="email" name="email">
+                    <input type="email" name="email" class="form_input _req _email" required>
                 </div>
                 <div class="field">
                     <label for="message">Message</label>
-                    <textarea name="message" id="message" rows="4"></textarea>
+                    <textarea name="message" id="message" rows="4" required></textarea>
                 </div>
             </div>
             <button type="submit" class="send">Send Message</button> 
         </form>
     </div>
 
+    <!-- alert messages start -->
+    <!-- <div class="alert-success">
+      <span>Message Sent! Thank you for contacting us.</span>
+    </div>
+    <div class="alert-error">
+      <span>Something went wrong! Please try again.</span>
+    </div> -->
+    <!-- alert messages end -->
     
     
     <!-- Footer -->

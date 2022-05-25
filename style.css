@@ -16,10 +16,6 @@ body {
 	font-weight: 300;
 }
 
-#body.active {
-    filter: blur(5px)
-}
-
 a {
     text-decoration: none;
     color: #fff;
@@ -31,10 +27,6 @@ a {
     display: flex;
     justify-content: space-between;
     padding: 10px;
-}
-
-#header.active {
-    filter: blur(5px)
 }
 
 #header h1 {
@@ -64,10 +56,6 @@ a {
 }
 
 /* Menu */
-
-#toggle-menu.active {
-    filter: blur(5px)
-}
 
 #menu {
     position: fixed;
@@ -125,6 +113,7 @@ a {
 
 #menu #close {
     font-weight: 500;
+    cursor: pointer;
 }
 
 #menu a:hover {
@@ -148,10 +137,6 @@ section {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;    
-}
-
-#social.active {
-    filter: blur(5px);
 }
 
 .social .button-social {    
@@ -242,12 +227,6 @@ section {
     font-size: 35px;
 }
 
-#intro.active {
-    filter: blur(5px);
-    pointer-events: none;
-    user-select: none;
-}
-
 .intro h1 {
     font-weight: 700;
     letter-spacing: 3px;
@@ -275,10 +254,6 @@ section {
     margin: 30px -15px;
     justify-content: space-between;
     align-items: center;
-}
-
-#logos.active {
-    filter: blur(5px);
 }
 
 .logos img {
@@ -414,7 +389,7 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    transition: 200ms ease-in-out;    
+    transition: 0.4s ease-in-out;    
     border-radius: 5px;
     padding: 20px;
     z-index: 10;
@@ -427,6 +402,7 @@ section {
 
 .modal.active {
     transform: translate(-50%, -50%) scale(1);
+    transition: 0.5s;
 }
 
 .modal-header {
@@ -547,6 +523,27 @@ form {
     padding-bottom: 40px;
 }
 
+.form_body {
+    position: relative;
+}
+
+.form_body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(51, 51,51, 0.3) url(images/Spinner-1s-200px.gif) center / 50px no-repeat;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.form_body._sending::after {
+    opacity: 1;
+    visibility: visible;
+}
+
 .fields {
     display: flex;
     flex-wrap: wrap;    
@@ -584,6 +581,14 @@ input {
     font-weight: 400;
 }
 
+input:focus {
+    box-shadow: 0 0 15px rgb(241, 239, 239);
+}
+
+input ._error {
+    box-shadow: 0 0 15px red;
+}
+
 textarea {
     padding: 10px 12px;
     appearance: none;
@@ -597,6 +602,10 @@ textarea {
     display: block;
     outline: 0;       
     width: 80%;
+}
+
+textarea:focus {
+    box-shadow: 0 0 15px rgb(241, 239, 239);
 }
 
 form button {
