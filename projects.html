@@ -11,90 +11,19 @@
     <link rel="stylesheet" href="style.css">
     <title>Derkach Dim - Web Developer</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Derkach Dim - Projects</title>
 </head>
 <body>
+
     <!-- Header -->
-    
+
     <header id="header" class="alt">
         <h1><a href="index.html">Dim Derkach</a></h1>
         <nav>
-            <a href="#menu" onclick="openMenu()" id="toggle-menu">Menu</a>
+            <a href="index.html" id="btn-back">Back</a>
         </nav>
     </header>
 
-        <!-- Menu -->
-        <nav id="menu" class="menu">
-            <div class="inner">
-                <h2>MENU</h2>
-                <a href="#social" onclick="closeMenu()">HOME</a>
-                <a href="#projects" onclick="closeMenu()">PROJECTS</a>
-                <a href="#contact" onclick="closeMenu()">CONTACT</a>
-                <a id="close" onclick="closeMenu()">Close</a>
-            </div>
-        </nav>
-
-    <section>
-        <!-- Social -->
-        <div class="social" id="social">
-            <div class="button-social">
-                <div class="icon">
-                    <i class="fa-brands fa-github-square"></i>
-                </div>
-                <span><a href="https://github.com/stay0nly" target="_blank">Github</a></span>
-            </div>
-            <div class="button-social">
-                <div class="icon">
-                    <i class="fa-brands fa-linkedin"></i>
-                </div>
-                <span><a href="https://www.linkedin.com/in/dmytro-derkach-40197b63/" target="_blank">Linkedin</a></span>
-            </div>
-            <div class="button-social">
-                <div class="icon">
-                    <i class="fa-solid fa-envelope"></i>
-                </div>
-                <span><a href="mailto:derkach.dmt@gmail.com">E-Mail</a></span>
-            </div>
-            <div class="button-social">
-                <div class="icon">
-                    <i class="fa-solid fa-download"></i>
-                </div>
-                <span><a href="http://www.codim.dev/download/not-ready-yet" target="_blank">Resume</a></span>
-            </div>
-        </div>
-
-        <!-- Intro -->
-
-        <div class="intro" id="intro">
-            <h1>DIM DERKACH</h1>
-            <hr>
-            <p>SOFTWARE DEVELOPER</p>
-        </div>
-        
-    </section>
-
-    <!-- Technologies -->
-    <div class="logos" id="logos">
-        <div class="logos_item">
-            <img class="logos_img" src="images/spec/html.png" alt="">
-        </div>
-        <div class="logos_item">
-            <img class="logos_img" src="images/spec/css.png" alt="">
-        </div>
-        <div class="logos_item">
-            <img class="logos_img" src="images/spec/js.png" alt="">
-        </div>
-        <div class="logos_item">
-            <img class="logos_img" src="images/spec/jquery.png" alt="">
-        </div>
-        <div class="logos_item">
-            <img class="logos_img" src="images/spec/react.png" alt="">
-        </div>
-        <div class="logos_item">
-            <img class="logos_img" src="images/spec/bootstrap.png" alt="">
-        </div>
-
-    </div>
-    
     <!-- Projects -->
     <div class="projects" id="projects">
         <div class="projects-text">
@@ -142,8 +71,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
                     <button data-modal-target="#modal4"><i class="fa-solid fa-circle-arrow-right"></i> Learn more</button>
                 </div>
-            </div>           
-           <a href="projects.html" class="browse">Browse more</a>           
+            </div>                     
         </div>
     </div>
     <div id="overlay"></div>
@@ -207,41 +135,10 @@
         </div>        
     </div>
 
-    <!-- Get in touch -->
 
-    <div class="get-in-touch" id="contact">
-        <h2>GET IN TOUCH</h2>
-        <p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-        <form action="sendmail.php" method="POST" class="form_body" id="form">
-            <div class="fields">
-                <div class="field">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" class="form_input _req" required>
-                </div>
-                <div class="field">
-                    <label for="E-Mail">E-Mail</label>
-                    <input type="email" name="email" class="form_input _req _email" required>
-                </div>
-                <div class="field">
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" rows="4" required></textarea>
-                </div>
-            </div>
-            <button type="submit" class="send">Send Message</button> 
-        </form>
-    </div>
 
-    <!-- alert messages start -->
-    <div class="alert-success">
-      <span>Message Sent! Thank you for contacting us.</span>
-    </div>
-    <div class="alert-error">
-      <span>Something went wrong! Please try again.</span>
-    </div>
-    <!-- alert messages end -->
-    
-    
     <!-- Footer -->
+
     <footer>
         <p>
             Created by stay0nly 
