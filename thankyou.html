@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/93cab00ee1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Derkach Dim - Web Developer</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Derkach Dim - Thank You</title>
+</head>
+<body>
+
+    <!-- Header -->
+
+    <header id="header" class="alt">
+        <h1><a href="index.html">Dim Derkach</a></h1>
+        <nav>
+            <a href="index.html" id="btn-back">Back</a>
+        </nav>
+    </header>
+
+
+    <div class="thankyou">
+        <h1>Your email has been sent. Thank you!</h1>
+    </div>
+
+
+    <!-- Footer -->
+
+    <footer>
+        <p>
+            Created by stay0nly 
+            <a href="https://github.com/stay0nly/Portfolio" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </p>
+
+    </footer>
+
+
+
+    <script src="app.js"></script>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            let header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
+</body>
+</html>
