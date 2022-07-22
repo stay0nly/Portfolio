@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/93cab00ee1.js" crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Derkach Dim - Web Developer</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -58,7 +59,7 @@
                 <div class="icon">
                     <i class="fa-solid fa-download"></i>
                 </div>
-                <span><a href="http://www.codim.dev/download/not-ready-yet" target="_blank">Resume</a></span>
+                <span><a href="http://www.codim.dev/download/FrontEnd Developer - Derkach Dmytro.pdf" target="_blank">Resume</a></span>
             </div>
         </div>
 
@@ -99,51 +100,51 @@
     <div class="projects" id="projects">
         <div class="projects-text">
             <h2>Hi, it's Dim!</h2>
-            <p>I am a web developer currently based in China. Hit me up and let's create something special.</p>
+            <p>I am a web developer currently based in Canada. Hit me up and let's create something special.</p>
             
         </div>
         <div class="cards">
             <div class="card">
                 <div class="card-img">
-                    <img src="images/projects/project.jpg" alt="">
+                    <img src="images/projects/auth-app1.jpg" alt="">
                 </div>
                 <div class="card-text">
-                    <h3>ANTE FERMENTUM</h3>                    
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+                    <h3>SECRETS - AUTHENTICATION APP</h3>                    
+                    <p>Last version uses Google and Facebook APIs to authorize users as well as storing their notes in database. Users can also sign up with their own email&password to submit notes.</p>
                     <button data-modal-target="#modal1"><i class="fa-solid fa-circle-arrow-right"></i> Learn more</button>
                 </div>
             </div>
             <div class="card">
                 <div class="card-img">
-                    <img src="images/projects/project.jpg" alt="">
+                    <img src="images/projects/keeper-app1.jpg" alt="">
                 </div>
                 <div class="card-text">
-                    <h3>ANTE FERMENTUM</h3>                    
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+                    <h3>Keeper App</h3>                    
+                    <p>With this application, you can create and delete notes and add titles to them. All stylized for better UI/UX and powered by React. In the future version I want to add a backend side, so you can authorize and store your own notes in the database.</p>
                     <button data-modal-target="#modal2"><i class="fa-solid fa-circle-arrow-right"></i> Learn more</button>
                 </div>
             </div>
             <div class="card">
                 <div class="card-img">
-                    <img src="images/projects/project.jpg" alt="">
+                    <img src="images/projects/pass-gen1.jpg" alt="">
                 </div>
                 <div class="card-text">
-                    <h3>ANTE FERMENTUM</h3>                    
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+                    <h3>PASSWORD GENERATOR</h3>                    
+                    <p>Using vanilla JavaScript this app generates 4 random passwords using arrays of all keyboard symbols.</p>
                     <button data-modal-target="#modal3"><i class="fa-solid fa-circle-arrow-right"></i> Learn more</button>
                 </div>
             </div>
             <div class="card">
                 <div class="card-img">
-                    <img src="images/projects/project.jpg" alt="">
+                    <img src="images/projects/color-app1.jpg" alt="">
                 </div>
                 <div class="card-text">
-                    <h3>ANTE FERMENTUM</h3>                    
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+                    <h3>COLOR TOOL</h3>                    
+                    <p>A very useful JavaScript app to lighten/darken HEX colors. As an output you will get another HEX value, which simply copy to clipboard and use.</p>
                     <button data-modal-target="#modal4"><i class="fa-solid fa-circle-arrow-right"></i> Learn more</button>
                 </div>
-            </div>           
-           <a href="projects.html" class="browse">Browse more</a>           
+            </div> 
+            <a href="projects.html" class="browse">Browse more</a>                    
         </div>
     </div>
     <div id="overlay"></div>
@@ -151,58 +152,59 @@
     <!-- Project Preview Modal -->
 
     <div class="modal" id="modal1">
-        <img src="images/projects/1.jpg" alt="">
+        <img src="images/projects/auth-app2.jpg" alt="">
         <div class="modal-description">
             <div class="modal-header">
-                <div class="title">Project 1</div>
+                <div class="title">Secrets - Authentication</div>
                 <button data-close-button class="close-button">&times;</button>
             </div>
             <div class="modal-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla. Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla.</p>
-                <a href="http://" target="_blank">WWW</a>
-                <a href="http://" target="_blank">GitHub</a>
+                <p>This app was made as a Backend project to learn more abouth authentication types and security. Using Node.js and its modules, I connected MongoDB to securely store user data online.</p>
+                <a href="https://whispering-brook-23782.herokuapp.com/" target="_blank">Heroku</a>
+                <a href="https://github.com/stay0nly/Secrets-Auth-App" target="_blank">GitHub</a>
             </div>
         </div>        
     </div>
     <div class="modal" id="modal2">
-        <img src="images/projects/1.jpg" alt="">
+        <img src="images/projects/keeper-app2.jpg" alt="">
         <div class="modal-description">
             <div class="modal-header">
-                <div class="title">Project 2</div>
+                <div class="title">Keeper App</div>
                 <button data-close-button class="close-button">&times;</button>
             </div>
             <div class="modal-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla. Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla.</p>
-                <a href="http://" target="_blank">WWW</a>
-                <a href="http://" target="_blank">GitHub</a>
+                <p>With this application, you can create and delete notes and add titles to them. All stylized for better UE and powered by React. In the future version I want to add a backend side, so you can authorize and store your own notes in the database.</p>
+                <a href="https://keeper-app.codim.dev/" target="_blank">WWW</a>
+                <a href="https://github.com/stay0nly/KeeperApp" target="_blank">GitHub</a>
             </div>
         </div>        
     </div>
     <div class="modal" id="modal3">
-        <img src="images/projects/1.jpg" alt="">
+        <img src="images/projects/pass-gen2.jpg" alt="">
         <div class="modal-description">
             <div class="modal-header">
-                <div class="title">Project 3</div>
+                <div class="title">Password Generator</div>
                 <button data-close-button class="close-button">&times;</button>
             </div>
             <div class="modal-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla. Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla.</p>
-                <a href="http://" target="_blank">WWW</a>
-                <a href="http://" target="_blank">GitHub</a>
+                <p>Using vanilla JavaScript this app generates 4 random passwords using arrays of all keyboard symbols. Well, almost all of them.
+                    You can simply enter desired length and click "Generate", then simply click on any of passwords to copy it to clipboard.</p>
+                <a href="https://stay0nly.github.io/PasswordGenerator/" target="_blank">WWW</a>
+                <a href="https://github.com/stay0nly/PasswordGenerator" target="_blank">GitHub</a>
             </div>
         </div>        
     </div>
     <div class="modal" id="modal4">
-        <img src="images/projects/1.jpg" alt="">
+        <img src="images/projects/color-app2.jpg" alt="">
         <div class="modal-description">
             <div class="modal-header">
-                <div class="title">Project 4</div>
+                <div class="title">Color Tool</div>
                 <button data-close-button class="close-button">&times;</button>
             </div>
             <div class="modal-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla. Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla.</p>
-                <a href="http://" target="_blank">WWW</a>
-                <a href="http://" target="_blank">GitHub</a>
+                <p>A very useful JavaScript app to lighten/darken HEX colors. As an output you will get another HEX value, which simply copy to clipboard and use.</p>
+                <a href="https://stay0nly.github.io/ColorTool/" target="_blank">WWW</a>
+                <a href="https://github.com/stay0nly/ColorTool" target="_blank">GitHub</a>
             </div>
         </div>        
     </div>
@@ -211,7 +213,7 @@
 
     <div class="get-in-touch" id="contact">
         <h2>GET IN TOUCH</h2>
-        <p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
+        <p>For offers and any questions, please write to me.</p>
         <form action="sendmail.php" method="POST" class="form_body" id="form">
             <div class="fields">
                 <div class="field">
@@ -226,8 +228,15 @@
                     <label for="message">Message</label>
                     <textarea name="message" id="message" rows="4" required></textarea>
                 </div>
+                <div class="field">
+                    <div class="g-recaptcha" 
+                    data-sitekey="6Lf6Dk8gAAAAAMSERMYAeSqQLTbZss2dnxRPyMaY" 
+                    data-callback="recaptcha_callback"
+                    data-theme="dark"></div>
+                </div>
+                
             </div>
-            <button type="submit" class="send">Send Message</button> 
+            <button id="submit-btn" type="submit" class="send" disabled>Send Message</button> 
         </form>
     </div>
 
@@ -259,5 +268,14 @@
             header.classList.toggle("sticky", window.scrollY > 0);
         });
     </script>
+     <!-- Recaptcha -->
+     <script>
+         function recaptcha_callback() {
+             let submitBtn = document.getElementById('submit-btn');
+             submitBtn.removeAttribute('disabled');
+             submitBtn.style.cursor = 'pointer';
+            //  alert(response);
+         }
+     </script>
 </body>
 </html>
